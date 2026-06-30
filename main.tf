@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "dashboard_server" {
   ami           = "ami-0c7217cdde317cfec" # Amazon Linux 2023 AMI
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 
   user_data = <<-EOF
               #!/bin/bash
